@@ -40,20 +40,16 @@ number = int(randint(0, 2))
 list_random = list0[number]
 print(f"Computer choice is:\n{list_random}")
 
-if choice == 'rock' and list1[number] == 'rock':
+if choice == list1[number]:
   print('Draw game')
 elif choice == 'rock' and list1[number] == 'paper':
   print('Ohhhhhh, so sad... You\'re lose!')
 elif choice == 'rock' and list1[number] == 'scissors':
   print("Congratulations! You're a winner!!!")
-elif choice == 'paper' and list1[number] == 'paper':
-  print('Draw Game')
 elif choice == 'paper' and list1[number] == 'scissors':
   print('Ohhhhhh, so sad... You\'re lose!')
 elif choice == 'paper' and list1[number] == 'rock':
   print("Congratulations! You're a winner!!!")
-elif choice == 'scissors' and list1[number] == 'scissors':
-  print('Draw Game')
 elif choice == 'scissors' and list1[number] == 'rock':
   print('Ohhhhhh, so sad... You\'re lose!')
 elif choice == 'scissors' and list1[number] == 'paper':
